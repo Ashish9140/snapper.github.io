@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --light_gray: #F3F2F0;
+    --darker_gray: #EAEAEA;
+    --violet: #452D6B;
+    --green: #92D050;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light_gray);
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: var(--green);
+    display: flex;
+    /* border: 2px solid var(--darker_gray); */
+}
+
+.btns button {
+    background-color: var(--violet);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+}
+
+
+
+/* main-sec */
+.main-sec {
+    /* border: 2px solid var(--darker_gray); */
+    width: 100%;
+}
+
+.main-sec button {
+    background-color: var(--violet);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* screenShot Section */
+.ss-sec {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+
+/* audio Section */
+.audio-sec {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.audio-sec-btn {
+    display: flex;
+}
+
+.audio-sec-btn button {
+    margin: 5px;
+}
+
+
+
+
+/* video without Audio Section */
+.videoWithoutAudio-sec,
+.screenWithAudio-sec,
+.screenWithoutAudio-sec {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.videoWithoutAudio-sec-btn,
+.screenWithAudio-sec-btn,
+.screenWithoutAudio-sec-btn {
+    display: flex;
+}
+
+.videoWithoutAudio-sec-btn button,
+.screenWithAudio-sec-btn button,
+.screenWithoutAudio-sec-btn button {
+    margin: 5px;
+}
+
+
+/* video with Audio Section */
+.videoWithAudio-sec {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.videoWithAudio-sec-btn {
+    display: flex;
+}
+
+.videoWithAudio-sec-btn button {
+    margin: 5px;
+}
+
+video {
+    width: 450px;
+    border: 2px solid var(--darker_gray);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--darker_gray);
+    color: black;
+}
+
+.active {
+    background-color: var(--green) !important;
+    border: 1px solid white !important;
+    color: var(--violet) !important;
+}
+
+img {
+    margin-top: 9px;
+    width: 100%;
+    height: 165px;
+    /* border: 2px solid var(--darker_gray); */
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.heading {
+    margin-bottom: 10px;
+    /* border: 2px solid green; */
+    padding: 5px;
+}

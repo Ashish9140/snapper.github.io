@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <title>Smart Coordinator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- <h1 class="heading">Smart Coordinator</h1> -->
+
+    <div class="container">
+        <div class="btns">
+            <img src="images/logo2.png" alt="logo">
+            <button class="take-ss">Take Photo</button>
+            <button class="audio-rec">Record Audio</button>
+            <button class="video-rec-withoutAudio">Record Video Without Audio</button>
+            <button class="video-rec-withAudio">Record Video With Audio</button>
+            <button class="screen-rec-withoutAudio">Record Screen With Audio</button>
+            <button class="screen-rec-withAudio">Record Screen Without Audio</button>
+        </div>
+        <div class="main-sec">
+            <div class="ss-sec">
+                <div>
+                    <video autoplay class="ssCtr"></video>
+                </div>
+                <div>
+                    <button class="ss-save">Click</button>
+                </div>
+            </div>
+            <div class="audio-sec">
+                <div>
+                    <audio autoplay controls muted class="audioCtr"></audio>
+                </div>
+                <div class="audio-sec-btn">
+                    <button id="audiobtnPauseReco">Pause</button>
+                    <button id="audiobtnResumeReco" style="display: none ;">Resume</button>
+                    <button id="audiobtnStopReco">Stop</button>
+                </div>
+            </div>
+            <div class="videoWithoutAudio-sec">
+                <div>
+                    <video autoplay controls muted class="videoWithoutAudioCtr"></video>
+                </div>
+                <div class="videoWithoutAudio-sec-btn">
+                    <button id="videobtnPauseReco">Pause</button>
+                    <button id="videobtnResumeReco" style="display: none ;">Resume</button>
+                    <button id="videobtnStopReco">Stop</button>
+                </div>
+            </div>
+            <div class="videoWithAudio-sec">
+                <div>
+                    <video autoplay controls muted class="videoWithAudioCtr"></video>
+                </div>
+                <div class="videoWithAudio-sec-btn">
+                    <button id="videoWithAudiobtnPauseReco">Pause</button>
+                    <button id="videoWithAudiobtnResumeReco" style="display: none ;">Resume</button>
+                    <button id="videoWithAudiobtnStopReco">Stop</button>
+                </div>
+            </div>
+            <div class="screenWithAudio-sec">
+                <div>
+                    <video autoplay controls muted class="screenWithAudioCtr"></video>
+                </div>
+                <div class="screenWithAudio-sec-btn">
+                    <button id="screenWithAudiobtnPauseReco">Pause</button>
+                    <button id="screenWithAudiobtnResumeReco" style="display: none ;">Resume</button>
+                    <button id="screenWithAudiobtnStopReco">Stop</button>
+                </div>
+            </div>
+            <div class="screenWithoutAudio-sec">
+                <div>
+                    <video autoplay controls muted class="screenWithoutAudioCtr"></video>
+                </div>
+                <div class="screenWithoutAudio-sec-btn">
+                    <button id="screenWithoutAudiobtnPauseReco">Pause</button>
+                    <button id="screenWithoutAudiobtnResumeReco" style="display: none ;">Resume</button>
+                    <button id="screenWithoutAudiobtnStopReco">Stop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2022 THE GREEN BRIDGE Ingenieurgesellschaft mbH
+    </footer>
+
+    <script src="js/ssScript.js"></script>
+    <script src="js/AudioScript2.js"></script>
+    <script src="js/VideoWithoutAudio2.js"></script>
+    <script src="js/VideoWithAudio2.js"></script>
+    <script src="js/screenRecord.js"></script>
+    <script src="js/screenRecord2.js"></script>
+</body>
+
+</html>
